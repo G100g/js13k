@@ -34,3 +34,4 @@ jobs:
           package-manager: npm
           # The command you wish to run e.g. test
           command: party
+        working-directory: "./2022
