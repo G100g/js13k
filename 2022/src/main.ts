@@ -16,6 +16,10 @@ let sprite = Sprite({
 let loop = GameLoop({
     // create the main game loop
     update: function () {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        //...drawing
+
         // update the game state
         sprite.update();
 
