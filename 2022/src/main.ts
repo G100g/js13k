@@ -150,15 +150,12 @@ const zombieManager = {
                     ? BulletDirection.right
                     : BulletDirection.left;
 
-            console.log({ direction });
             this.spwan(direction);
 
             this.lastTimeToSpawnZombie = Math.ceil(Math.random() * 100);
         }
 
         this.lastTimeToSpawnZombie--;
-
-        console.log(this.pool.size);
     },
     render() {
         this.pool.forEach((zombie) => {
